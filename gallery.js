@@ -92,12 +92,24 @@ const artwork = document.getElementById("artwork")
 // event.offsetX, event.offsetY gives the (x,y) offset from the edge of the canvas.
 
 // Add the event listeners for mousedown, mousemove, and mouseup
-artwork.addEventListener('touchstart', e => {
+document.body.addEventListener('touchstart', e => {
   artwork.setAttribute("style", "display: none;")
 });
-artwork.addEventListener('touchend', e => {
+document.body.addEventListener('touchend', e => {
   artwork.setAttribute("style", "display: inline-block;")
 });
+
+// $(document.body).on('touchmove', onScroll); // for mobile
+// $(window).on('scroll', onScroll); 
+
+// // callback
+// function onScroll(){ 
+//     if( $(window).scrollTop() + window.innerHeight >= document.body.scrollHeight ) { 
+//       artwork.setAttribute("style", "display: none;")
+//     }else{
+//       artwork.setAttribute("style", "display: inline-block;")
+//     }
+// }
 
 function random(min, max) {
   return Math.random() * (max - min) + min;
