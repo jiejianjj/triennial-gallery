@@ -24,14 +24,14 @@ function shuffle(){
   y = random(0, window.innerHeight);
   square.setAttribute("style", "left:" + x + "px; " + "top:" + y + "px;");
 
-for (var i = 1; i <= 36; i += 1) {
+for (var i = 103; i <= 142; i += 1) {
   var position = document.getElementById("art"+i);
   x = random(50, 100);
   y = random(50, 60);
   s = random(200, 500);
   position.setAttribute("style", "left:" + x + "px; " + "top:" + y + "px;" + "width:" + s + "px;");
 }
-for (var i = 143; i <= 146; i += 1) {
+for (var i = 157; i <= 157; i += 1) {
   var position = document.getElementById("art"+i);
   x = random(50, 100);
   y = random(50, 60);
@@ -57,8 +57,6 @@ $(document).ready(function () {
 //   text1[i].innerHTML = 'Testing here';
 // }
 jQuery(document.links) .filter(function() { return this.hostname != window.location.hostname; }) .attr('target', '_blank');
-
-
 function random(min, max) {
   return Math.random() * (max - min) + min;
 }
