@@ -20,34 +20,34 @@ var x, y, s;
 shuffle();
 function shuffle(){
   var square = document.getElementById("shuffle");
-  x = random(0, w-300);
+  x = random(100, w-400);
   y = random(0, h);
   square.setAttribute("style", "left:" + x + "px; " + "top:" + y + "px;");
   var room1 = document.getElementById("room1");
   
-  x = random(0, w-300);
+  x = random(100, w-400);
   y = random(0, window.innerHeight);
   room1.setAttribute("style", "left:" + x + "px; " + "top:" + y + "px;");
   var room2 = document.getElementById("room2");
   
-  x = random(0, w-300);
+  x = random(100, w-400);
   y = random(0, window.innerHeight);
   room2.setAttribute("style", "left:" + x + "px; " + "top:" + y + "px;");
   var room3 = document.getElementById("room3");
 
-  x = random(0, w-300);
+  x = random(100, w-400);
   y = random(0, window.innerHeight);
   room3.setAttribute("style", "left:" + x + "px; " + "top:" + y + "px;");
   var room4 = document.getElementById("room4");
   
-  x = random(0, w-300);
+  x = random(100, w-400);
   y = random(0, window.innerHeight);
   room4.setAttribute("style", "left:" + x + "px; " + "top:" + y + "px;");
 
 for (var i = 1; i <= 157; i += 1) {
   var position = document.getElementById("art"+i);
-  x = random(0, w-300);
-  y = random(0, h);
+  x = random(100, w-400);
+  y = random(0, h-200);
   s = random(170, 200);
   position.setAttribute("style", "left:" + x + "px; " + "top:" + y + "px;" + "width:" + s + "px;");
 }
