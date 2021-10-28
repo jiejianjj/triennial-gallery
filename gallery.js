@@ -92,10 +92,10 @@ const artwork = document.getElementById("artwork")
 // event.offsetX, event.offsetY gives the (x,y) offset from the edge of the canvas.
 
 // Add the event listeners for mousedown, mousemove, and mouseup
-mobile.addEventListener('touchstart', e => {
+artwork.addEventListener('touchstart', e => {
   artwork.setAttribute("style", "display: none;")
 });
-mobile.addEventListener('touchend', e => {
+artwork.addEventListener('touchend', e => {
   artwork.setAttribute("style", "display: inline-block;")
 });
 
