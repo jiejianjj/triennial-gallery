@@ -20,33 +20,33 @@ var x, y, s;
 shuffle();
 function shuffle(){
   var square = document.getElementById("shuffle");
-  x = random(0, w-200);
+  x = random(0, w-300);
   y = random(0, h);
   square.setAttribute("style", "left:" + x + "px; " + "top:" + y + "px;");
   var room1 = document.getElementById("room1");
   
-  x = random(0, w-200);
+  x = random(0, w-300);
   y = random(0, window.innerHeight);
   room1.setAttribute("style", "left:" + x + "px; " + "top:" + y + "px;");
   var room2 = document.getElementById("room2");
   
-  x = random(0, w-200);
+  x = random(0, w-300);
   y = random(0, window.innerHeight);
   room2.setAttribute("style", "left:" + x + "px; " + "top:" + y + "px;");
   var room3 = document.getElementById("room3");
 
-  x = random(0, w-200);
+  x = random(0, w-300);
   y = random(0, window.innerHeight);
   room3.setAttribute("style", "left:" + x + "px; " + "top:" + y + "px;");
   var room4 = document.getElementById("room4");
   
-  x = random(0, w-200);
+  x = random(0, w-300);
   y = random(0, window.innerHeight);
   room4.setAttribute("style", "left:" + x + "px; " + "top:" + y + "px;");
 
 for (var i = 1; i <= 157; i += 1) {
   var position = document.getElementById("art"+i);
-  x = random(0, w-200);
+  x = random(0, w-300);
   y = random(0, h);
   s = random(170, 200);
   position.setAttribute("style", "left:" + x + "px; " + "top:" + y + "px;" + "width:" + s + "px;");
@@ -85,6 +85,19 @@ $(document).ready(function () {
 // {
 //   text1[i].innerHTML = 'Testing here';
 // }
+
+const mobile = document.getElementById('statement');
+const artwork = document.getElementById("artwork")
+
+// event.offsetX, event.offsetY gives the (x,y) offset from the edge of the canvas.
+
+// Add the event listeners for mousedown, mousemove, and mouseup
+mobile.addEventListener('mousedown', e => {
+  artwork.setAttribute("style", "display: none;")
+});
+mobile.addEventListener('mouseup', e => {
+  artwork.setAttribute("style", "display: inline-block;")
+});
 
 function random(min, max) {
   return Math.random() * (max - min) + min;
