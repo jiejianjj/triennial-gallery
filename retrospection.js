@@ -28,14 +28,14 @@ for (var i = 1; i <= 36; i += 1) {
   var position = document.getElementById("art"+i);
   x = random(50, 100);
   y = random(50, 60);
-  s = random(300, 400);
+  s = random(200, 500);
   position.setAttribute("style", "left:" + x + "px; " + "top:" + y + "px;" + "width:" + s + "px;");
 }
 for (var i = 143; i <= 146; i += 1) {
   var position = document.getElementById("art"+i);
   x = random(50, 100);
   y = random(50, 60);
-  s = random(300, 400);
+  s = random(200, 500);
   position.setAttribute("style", "left:" + x + "px; " + "top:" + y + "px;" + "width:" + s + "px;");
 }
 }
